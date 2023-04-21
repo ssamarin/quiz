@@ -9,3 +9,11 @@
         transition: background .3s ease-in-out;
     }
 }
+
+.answerItem.success {
+    background: rgba(161, 240, 69, .7);
+}
+
+.answerItem.error {
+    background: rgba(240, 87, 108, .7);
+}
