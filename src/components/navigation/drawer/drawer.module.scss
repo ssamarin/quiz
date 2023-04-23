@@ -1,0 +1,36 @@
+.drawer {
+    padding: 20px 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    transform: translateX(0px);
+    transition: transform .22s ease-in;
+    z-index: 90;
+    background-color: #fff;
+    &.close {
+        transform: translateX(-300px);
+    }
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        & li {
+            margin-bottom: 15px;
+            & a {
+                padding: 0 20px 10px;
+                position: relative;
+                font-size: 30px;
+                text-decoration: none;
+                transition: opacity .3s;
+                background-color: #fff;
+                color: #363d54;
+                &:hover, .active {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
